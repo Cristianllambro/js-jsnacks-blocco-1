@@ -110,9 +110,14 @@ check.innerHTML = (arrNumber);
 
 let userNumber = parseInt(prompt('Scrivi quattro cifre'));
 let arrNumber = []
+let sum = 0
 
-for ()
-
-    
+if(arrNumber > 4) {
+    alert('Hai superato 4 cifre');
+} else if (arrNumber < 4){
+    alert('Hai meno di 4 crifre');
+}else {
+    arrNumber = [...arrNumber];
+}
 
 

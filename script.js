@@ -107,17 +107,29 @@ check.innerHTML = (arrNumber);
 */
 
 //Esercizio numero 6
-
-let userNumber = parseInt(prompt('Scrivi quattro cifre'));
+let btnCheck = document.getElementById('btn-check');
 let arrNumber = []
 let sum = 0
 
-if(arrNumber > 4) {
-    alert('Hai superato 4 cifre');
-} else if (arrNumber < 4){
-    alert('Hai meno di 4 crifre');
-}else {
-    arrNumber = [...arrNumber];
+function pippo (){
+    sum = 0;
+    arrNumber = [];
+    let numberUser = document.getElementById('number').value;
+
+    if(numberUser.length == 4) {
+        numberUser = parseInt(numberUser);
+        arrNumber = Array.from(String(numberUser), Number);
+        console.log(arrNumber)
+
+        for (let i = 0; i < arrNumber.length; i++) {
+            sum += arrNumber[i];
+            console.log(sum);
+        }
+
+        check.innerHTML = 'La somma dei tuoi numeri è: ' + sum;
+    } else {
+        console.error('Non hai inserito 4 cifre');
+    }
+    
+
 }
-
-

@@ -119,16 +119,14 @@ function pippo (){
     if(numberUser.length == 4) {
         numberUser = parseInt(numberUser);
         arrNumber = Array.from(String(numberUser), Number);
-        console.log(arrNumber)
 
         for (let i = 0; i < arrNumber.length; i++) {
             sum += arrNumber[i];
-            console.log(sum);
         }
 
         check.innerHTML = 'La somma dei tuoi numeri è: ' + sum;
     } else {
-        console.error('Non hai inserito 4 cifre');
+        check.innerHTML = 'Non hai inserito 4 cifre';
     }
     
 

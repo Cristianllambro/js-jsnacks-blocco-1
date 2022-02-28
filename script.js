@@ -229,7 +229,7 @@ const arrSurrname = [
     'Conti',
 ];
 
-const arrFake = [] .concat(arrName, arrSurrname);
+const arrFake = [];
 let i = 0;
 
 while (i < 3) {

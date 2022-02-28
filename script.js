@@ -19,6 +19,7 @@ if (userNumberOne > userNumberTwo) {
 
 
 
+
 // esercizio numero 2
 
 /* L'utente inserisce due parole in successione, con due prompt.
@@ -37,6 +38,8 @@ if (wordUserOne.length > wordUserTwo.length) {
     check.innerHTML = 'Sono lunghe uguali.';
 }
 */
+
+
 
 
 //esercizio numero 3
@@ -60,6 +63,8 @@ for (i = 0; i < arrNumber.length; i++) {
 
 check.innerHTML = sum;
 */
+
+
 
 
 //esercizio numero 4
@@ -91,6 +96,9 @@ if (invited) {
 }
 */
 
+
+
+
 //esercizio numero 5
 
 /*
@@ -106,7 +114,12 @@ check.innerHTML = (arrNumber);
 
 */
 
+
+
+
 //Esercizio numero 6
+
+/*
 let btnCheck = document.getElementById('btn-check');
 let arrNumber = []
 let sum = 0
@@ -128,6 +141,51 @@ function pippo (){
     } else {
         check.innerHTML = 'Non hai inserito 4 cifre';
     }
-    
 
 }
+*/
+
+
+
+
+// Esercizio numero 7
+
+/*
+let arr = [];
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+    sum += i;
+    check.innerHTML = sum;
+}
+
+sum/= 10;
+check.innerHTML = sum;
+*/
+
+
+
+
+// Esercizio numero 8
+
+/*
+let sum = 0;
+
+for (let i = 0; i < 5; i++) {
+    let numberUser = parseInt(prompt('Inserisci un numero:'));
+    sum += numberUser;
+    check.innerHTML = sum;
+}
+*/
+
+// variante while
+
+let userNumber = parseInt(prompt('Inserisci un numero:'));
+let sum = 0;
+let i = 0;
+
+while (i < userNumber) {
+    sum += userNumber;
+    console.log(sum)
+}
+

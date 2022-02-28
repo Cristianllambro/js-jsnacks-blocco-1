@@ -213,6 +213,7 @@ if (userNumber % 2 == 0) {
 
 // Esercizion numero 2.3
 
+/*
 const arrName = [
     'Alessandro', 
     'Alfredo',
@@ -221,7 +222,7 @@ const arrName = [
     'Mattia',
 ];
 
-const arrSurrname = [
+const arrSurname = [
     'Rossi',
     'Ferrari',
     'Bianchi',
@@ -235,12 +236,18 @@ const arrFake = [];
 let i = 0;
 
 while (i < 3) {
-    let randomName = Math.floor(Math.random() * arrName.length);
-    let randomSurrname = Math.floor(Math.random() * arrSurrname.length);
-    console.log(randomName, arrName);
-    
+    let randomNameIndex = Math.floor(Math.random() * arrName.length);
+    let randomSurnameIndex = Math.floor(Math.random() * arrSurname.length);
+    let randomName = arrName[randomNameIndex];
+    let randomSurname = arrSurname[randomSurnameIndex];
+    arrFake.push(randomName, randomSurname);
     i++;
 }
+check.innerHTML = arrFake.join(' , ');
+
+*/
+
+
 
 
 

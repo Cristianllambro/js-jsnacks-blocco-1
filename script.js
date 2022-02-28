@@ -229,13 +229,17 @@ const arrSurrname = [
     'Conti',
 ];
 
+
+
 const arrFake = [];
 let i = 0;
 
 while (i < 3) {
+    let randomName = Math.floor(Math.random() * arrName.length);
+    let randomSurrname = Math.floor(Math.random() * arrSurrname.length);
+    console.log(randomName, arrName);
     
     i++;
-    console.log(arrFake)
 }
 
 

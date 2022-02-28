@@ -180,12 +180,14 @@ for (let i = 0; i < 5; i++) {
 
 // variante while
 
-let userNumber = parseInt(prompt('Inserisci un numero:'));
+// let userNumber = parseInt(prompt('Inserisci un numero:'));
 let sum = 0;
 let i = 0;
 
-while (i < userNumber) {
-    sum += userNumber;
-    console.log(sum)
+while (i < 5) {
+    let userNumber = parseInt(prompt('Inserisci un numero:'));
+    i++;
+    console.log(i);
 }
+
 

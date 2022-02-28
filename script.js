@@ -148,7 +148,7 @@ function pippo (){
 
 
 
-// Esercizio numero 7
+// Esercizio numero 1.9
 
 /*
 let arr = [];
@@ -166,7 +166,7 @@ check.innerHTML = sum;
 
 
 
-// Esercizio numero 8
+// Esercizio numero 2.1
 
 /*
 let sum = 0;
@@ -180,14 +180,67 @@ for (let i = 0; i < 5; i++) {
 
 // variante while
 
-// let userNumber = parseInt(prompt('Inserisci un numero:'));
+/*
 let sum = 0;
 let i = 0;
 
 while (i < 5) {
     let userNumber = parseInt(prompt('Inserisci un numero:'));
+    sum+= userNumber;
     i++;
-    console.log(i);
+    check.innerHTML = sum;
 }
+*/
+
+
+
+
+// Esercizio numero 2.2
+
+/*
+const userNumber = parseInt(prompt('Inserisci un numero:'));
+
+if (userNumber % 2 == 0) {
+    check.innerHTML = userNumber;
+} else {
+    let numberOdd = userNumber + 1;
+    check.innerHTML = numberOdd;
+}
+*/
+
+
+
+
+// Esercizion numero 2.3
+
+const arrName = [
+    'Alessandro', 
+    'Alfredo',
+    'Cristian',
+    'Marco',
+    'Mattia',
+];
+
+const arrSurrname = [
+    'Rossi',
+    'Ferrari',
+    'Bianchi',
+    'Ricci',
+    'Conti',
+];
+
+const arrFake = [] .concat(arrName, arrSurrname);
+let i = 0;
+
+while (i < 3) {
+    
+    i++;
+    console.log(arrFake)
+}
+
+
+
+
+
 
 

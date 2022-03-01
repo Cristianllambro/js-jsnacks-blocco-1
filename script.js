@@ -151,7 +151,6 @@ function pippo (){
 // Esercizio numero 1.9
 
 /*
-let arr = [];
 let sum = 0;
 
 for (let i = 1; i <= 10; i++) {
